@@ -1,0 +1,15 @@
+.Footer {
+    background: var(--neutral-800);
+    color: var(--neutral-200);
+    padding: var(--space-lg);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: var(--shadow-lg);
+}
+
+.Footer p {
+    font-size: 0.875rem;
+    opacity: 0.9;
+}

@@ -1,0 +1,47 @@
+# Core Web Framework
+Flask==2.3.2
+Flask-Cors==3.0.10
+Flask-Session==0.5.0
+Werkzeug==2.3.7
+gunicorn==20.1.0
+
+# Database
+psycopg2-binary==2.9.10
+
+# Video Processing
+numpy==1.24.3            # Install first for moviepy dependency
+moviepy==1.0.3
+imageio==2.31.1          # Specific version for stability
+imageio-ffmpeg==0.4.8
+decorator==4.4.2
+proglog==0.1.10
+
+# Speech and Text Analysis
+SpeechRecognition==3.9.0
+textblob==0.17.1
+nltk==3.8.1
+
+# Security and Authentication
+bcrypt==4.0.1
+PyJWT==2.8.0
+
+# File Storage
+dropbox==12.0.2
+
+# HTTP Requests
+requests==2.31.0
+
+# Configuration and Environment
+python-dotenv==1.0.0
+python-decouple==3.8.0
+
+# Data Processing
+pandas==2.0.3
+
+# Testing
+pytest==7.4.0
+pytest-flask==1.2.0
+
+# Development Tools
+black==23.9.1
+flake8==6.1.0

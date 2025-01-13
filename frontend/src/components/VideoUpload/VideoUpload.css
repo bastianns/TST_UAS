@@ -1,0 +1,116 @@
+.VideoUpload {
+    max-width: 900px;
+    margin: var(--space-xl) auto;
+    padding: var(--space-xl);
+    background: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition-normal);
+}
+
+.VideoUpload:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+.VideoUpload input[type="file"] {
+    width: 100%;
+    padding: var(--space-lg);
+    border: 2px dashed var(--neutral-300);
+    border-radius: 8px;
+    background: var(--neutral-50);
+    transition: var(--transition-fast);
+    cursor: pointer;
+    outline: none;
+}
+
+.VideoUpload input[type="file"]:hover {
+    border-color: var(--primary-color);
+    background: var(--neutral-100);
+}
+
+.VideoUpload h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: var(--space-md);
+    text-align: center;
+}
+
+.VideoUpload h3,
+.VideoUpload h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: var(--space-lg);
+    color: var(--neutral-800);
+}
+
+.VideoUpload ul {
+    list-style: disc;
+    margin-top: var(--space-md);
+    padding-left: var(--space-lg);
+    color: var(--neutral-700);
+}
+
+.VideoUpload ul li {
+    margin-bottom: var(--space-md);
+    background: var(--neutral-50);
+    border-left: 4px solid var(--primary-color);
+    padding: var(--space-md);
+    border-radius: 6px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-fast);
+}
+
+.VideoUpload ul li:hover {
+    background: var(--neutral-100);
+    border-color: var(--primary-dark);
+}
+
+.VideoUpload p {
+    margin: var(--space-sm) 0;
+    font-size: 0.95rem;
+    color: var(--neutral-600);
+}
+
+.VideoUpload .success-message {
+    color: var(--success-color);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: var(--space-md);
+    text-align: center;
+}
+
+.VideoUpload .error-message {
+    color: var(--danger-color);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: var(--space-md);
+    text-align: center;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    transform: translateY(-2px);
+}
+
+.VideoUpload .loader {
+    display: inline-block;
+    margin-right: 10px;
+    border: 3px solid var(--neutral-300);
+    border-top-color: var(--primary-color);
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

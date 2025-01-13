@@ -1,0 +1,27 @@
+.login-form {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #3b82f6;
+}
+
+.login-form button:disabled {
+    background-color: #94a3b8;
+}
+
+.login-form .input-error {
+    border-color: #ef4444;
+}
+
+.login-form .loading-overlay {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

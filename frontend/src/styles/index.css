@@ -1,0 +1,67 @@
+/* Import Global Styles */
+@import './reset.css';
+@import './variables.css';
+@import './utilities.css';
+@import './responsive.css';
+@import './animations.css';
+
+/* Global Styles */
+body {
+    font-family: var(--font-primary);
+    background-color: var(--neutral-50);
+    color: var(--neutral-800);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-secondary);
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    color: var(--neutral-900);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+button {
+    font-family: var(--font-primary);
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Container Utility */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}

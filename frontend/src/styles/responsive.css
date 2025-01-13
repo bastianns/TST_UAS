@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+    .VideoUpload {
+        margin: var(--space-md);
+        padding: var(--space-lg);
+    }
+    
+    .Header {
+        padding: var(--space-md);
+    }
+    
+    .Header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .button {
+        width: 100%;
+        margin: var(--space-xs) 0;
+    }
+}
